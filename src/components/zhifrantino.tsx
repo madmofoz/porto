@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function About() {
-  const codeSkills = ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "Flask"];
+  const codeSkills = ["Next.js", "React", "TypeScript", "Flask"];
   const engineeringSkills = ["SolidWorks", "Engine Tuning", "Maintenance"];
   const otherSkills = ["Photoshop", "Calisthenics", "Branding"];
 

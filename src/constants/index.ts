@@ -24,6 +24,12 @@ export const PROJECTS = [
     link: "/projects/green-energy"
   },
   {
+    title: "PONCES-1",
+    description: "A human-powered, pedal-operated fluid circulation ecosystem designed for processing agricultural organic waste without electricity.",
+    tech: ["Appropriate Technology", "Mechanical Design", "SolidWorks"],
+    link: "/projects/ponces-1"
+  },
+  {
     title: "KHAD Team",
     description: "Managing Complexity through Dynamic Visual Storytelling at KMHE 2024 events; Layouting and Designing Structures of Organization",
     tech: ["Graphic Design", "Layouting", "Photoshop"],

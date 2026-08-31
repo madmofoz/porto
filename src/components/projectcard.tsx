@@ -11,7 +11,7 @@ interface ProjectProps {
 
 export default function ProjectCard({ title, description, tech, link }: ProjectProps) {
   return (
-    <div className="scan-line group relative w-full p-8 md:p-12 border border-zinc-200 dark:border-zinc-800 rounded-[2.5rem] overflow-hidden transition-all duration-700 hover:border-zinc-400 dark:hover:border-zinc-500 flex flex-col justify-between">
+    <div className="scan-line group relative w-full p-6 md:p-12 border border-zinc-200 dark:border-zinc-800 rounded-[2.5rem] overflow-hidden transition-all duration-700 hover:border-zinc-400 dark:hover:border-zinc-500 flex flex-col justify-between">
       
       <div className="relative z-10 space-y-8">
         {/* Info Section */}

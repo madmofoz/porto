@@ -1,10 +1,41 @@
 "use client";
  
-import React from 'react';
+import Anomalies from "@/components/anomalies";
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Settings, Zap, Sun, Bot, Search, Leaf, AlertTriangle, Recycle } from 'lucide-react';
  
 export default function FailedIdealArchive() {
+    const [clickCount, setClickCount] = useState(0);
+    const [isBugActive, setIsBugActive] = useState(false);
+  
+    const handleSecurityClick = () => {
+      setClickCount((prev) => {
+        const newCount = prev + 1;
+  
+        if (newCount >= 3) {
+          setIsBugActive(true);
+  
+          setTimeout(() => {
+            setIsBugActive(false);
+            setClickCount(0);
+          }, 20000);
+  
+          return 0;
+        }
+        return newCount;
+      });
+    };
+  
+    useEffect(() => {
+      if (clickCount > 0 && !isBugActive) {
+        const timer = setTimeout(() => {
+          setClickCount(0);
+        }, 300);
+  
+        return () => clearTimeout(timer);
+      }
+    }, [clickCount, isBugActive]);
  
   return (
     <div className="font-sans duration-700 overflow-x-hidden">
@@ -283,6 +314,7 @@ export default function FailedIdealArchive() {
           </p>
         </div>
       </section>
+      <Anomalies isBugActive={isBugActive} />
     </div>
   );
 }

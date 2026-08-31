@@ -29,6 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/projects/ponces-1`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
+    {
       url: `${baseUrl}/projects/kawa-kawa`,
       lastModified: new Date(),
       changeFrequency: 'monthly',

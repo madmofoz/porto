@@ -54,7 +54,7 @@ export default function Home() {
             <div className="h-0.5 w-full bg-zinc-900 dark:bg-zinc-100"></div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {PROJECTS.map((project, index) => (
               <ProjectCard
                 key={index}

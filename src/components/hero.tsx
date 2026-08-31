@@ -54,12 +54,12 @@ export default function Hero() {
               <div className="lg:col-span-7 space-y-10">
                 <p className="text-xl md:text-3xl text-zinc-600 dark:text-zinc-400 leading-tight font-medium">
                   The <span className="text-black dark:text-white font-bold">Architect of System.</span> <br />
-                  Bridging the gap between <span className="italic">Mechanical Engineering</span> and <span className="italic font-bold text-black dark:text-white">Full-stack Development.</span>
+                  Bridging the gap between <span className="italic">Mechanical Engineering</span> and <span className="italic font-bold text-black dark:text-white">Creative Technology.</span>
                 </p>
 
                 <p className="text-lg text-zinc-500 max-w-2xl leading-relaxed font-mono text-sm opacity-80">
                   &gt; Analyzing engine dynamics... <br />
-                  &gt; Solving complex technical problems through solid instinct. <br />
+                  &gt; Solving complex technical problems through solid steps. <br />
                   &gt; Lead developer of <a href="https://siliminpro.fly.dev" target="_blank" className="underline decoration-1 underline-offset-4 hover:text-black dark:hover:text-white transition-colors">SiliminPro</a>.
                 </p>
 
